@@ -3,7 +3,7 @@
 	ini_set('default_charset','UTF-8');
 	
 	include("include/conexao.php");
-	include("include/seguranca.php");
+	include("seguranca.php");
 	
 	protegePagina();
 	
