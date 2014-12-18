@@ -17,22 +17,22 @@
 
 </head>
 <body>
-		<h1>Acesso Restrito</h1>
-		<form action="validar.php" method="POST" id="form">
-      CPF: <input type="text" name="cpf" style="width: 200px;">
-      Senha: <input type="password" name="senha" style="width: 200px;" value="">
-      
-      <?php
-      session_start();
-      if ($_SESSION['erroLogin'] == true) {
-        // Usuário inválido
-      	return false;
-      	unset($_SESSION['erroLogin']);
-      }
-      session_destroy();
-      ?>
-      
-			<button type="submit">Login</button>
-		</form>
+	<h1>Acesso Restrito</h1>
+	<form action="validar.php" method="POST" id="form">
+		CPF: <input type="text" name="cpf" style="width: 200px;">
+		Senha: <input type="password" name="senha" style="width: 200px;" value="">
+		
+		<?php
+			session_start();
+			if ($_SESSION['erroLogin'] == true) {
+				// Usuário inválido
+				return false;
+				unset($_SESSION['erroLogin']);
+			}
+			session_destroy();
+		?>
+		
+		<button type="submit">Login</button>
+	</form>
 </body>
 </html>
