@@ -1,6 +1,6 @@
 <?php
 	include("include/conexao.php");
-	include("include/seguranca.php");
+	include("seguranca.php");
 ?>
 
 <!DOCTYPE html>
